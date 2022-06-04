@@ -770,6 +770,22 @@ img {
   transform: translateY(0);
 }
 
+/* FORMS */
+
+.form {
+  width: 528px;
+  height: 581px;
+  outline: 1px solid tomato;
+  padding: 40px 39px 40px 41px;
+}
+
+.form-field {
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
 ul {
   padding: 0;
   margin: 0;
