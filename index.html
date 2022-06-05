@@ -538,6 +538,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form action="" class="form">
+          <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
           <div class="form-field">
             <label for="name">Ім‘я</label>
             <input type="text" name="name" id="name" placeholder="Ім‘я" />
@@ -554,8 +555,27 @@
           </div>
 
           <div class="form-field">
-            <label for="comment">Коментар</label>
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <label for="comment" class="name">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+              class="text-area"
+            ></textarea>
+          </div>
+
+          <div class="form">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="policy-link">Умови договору</a></label
+            >
+          </div>
+
+          <div class="form-field">
+            <button type="submit">Відправити</button>
           </div>
         </form>
         <button class="modal-button-close" type="button" data-modal-close>
