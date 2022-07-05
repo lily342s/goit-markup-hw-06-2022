@@ -751,6 +751,12 @@ img {
   transition: transform 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
+/* .modal-form {
+  outline: 1px solid tomato;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
 .modal-button-close {
   position: absolute;
   top: 8px;
@@ -807,8 +813,44 @@ img {
   padding: 12px 16px;
 }
 
+/*======= На placeholder підходить лише стилізувати властивості тексту =======*/
+.modal-text-area::placeholder {
+  /* color: tomato; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-field {
   margin-bottom: 10px;
+}
+
+.modal-field input[type='checkbox'] {
+  /* width: 40px;
+  height: 40px; */
+}
+
+.policy-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-left: 9px;
+}
+
+.policy-text-link {
+}
+
+.modal-field.policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /******************** FORMS ********************/
