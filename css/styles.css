@@ -536,7 +536,8 @@ img {
 
 /*============= FOOTER-SOCIAL ===========*/
 
-.social-title {
+.social-title,
+.subscribe-title {
   color: var(--white-color);
   font-size: inherit;
   line-height: 1.14;
@@ -574,6 +575,8 @@ img {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+
+/*============= FOOTER-SUBSCRIBE ===========*/
 
 /*====================== ПОРТФОЛІО ===================*/
 
