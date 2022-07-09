@@ -620,6 +620,7 @@ img {
 
 .checkbox:checked + .icon-footer {
   background-color: #188ce8;
+  background-image: url(../images/check.svg);
 }
 
 /*====================== ПОРТФОЛІО ===================*/
