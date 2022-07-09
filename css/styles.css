@@ -621,6 +621,9 @@ img {
 .checkbox:checked + .icon-footer {
   background-color: #188ce8;
   background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
 
 /*====================== ПОРТФОЛІО ===================*/
