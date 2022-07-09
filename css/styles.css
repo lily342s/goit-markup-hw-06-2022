@@ -600,6 +600,13 @@ img {
 
 .footer-button {
   margin-left: 41px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: #ffffff;
 }
 
 /*========== Hide checkbox ========*/
