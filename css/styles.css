@@ -215,7 +215,7 @@ p {
   margin-right: auto;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hw-04/bg-img-01.jpeg);
+    url(../images/bg-img.jpeg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -592,8 +592,10 @@ img {
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  padding: 15px 295px 15px 16px;
+  padding: 15px 16px;
   background-color: transparent;
+  outline: transparent;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-button {
@@ -601,11 +603,23 @@ img {
 }
 
 /*========== Hide checkbox ========*/
-
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: absolute;
+}
+
+.icon-footer {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon-footer {
+  background-color: #188ce8;
 }
 
 /*====================== ПОРТФОЛІО ===================*/
@@ -826,11 +840,33 @@ img {
   margin-bottom: 4px;
 }
 
+.input-wrap {
+  position: relative;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
+  padding-left: 40px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-text-area {
@@ -840,6 +876,12 @@ img {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  outline: transparent;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-text-area:focus {
+  border-color: var(--accent-color);
 }
 
 /*======= На placeholder підходить лише стилізувати властивості тексту =======*/
@@ -874,6 +916,8 @@ img {
 }
 
 .policy-text-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .modal-field.policy {
@@ -883,23 +927,8 @@ img {
 }
 
 .form-field .modal-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: block;
   margin: 0 auto;
-  padding: 10px 55px;
-  cursor: pointer;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /******************** FORMS ********************/
