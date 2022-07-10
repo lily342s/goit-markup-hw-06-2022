@@ -922,6 +922,10 @@ img {
   margin-bottom: 10px;
 }
 
+.modal-field-area {
+  margin-bottom: 20px;
+}
+
 .modal-field input[type='checkbox'] {
   /* width: 40px;
   height: 40px; */
