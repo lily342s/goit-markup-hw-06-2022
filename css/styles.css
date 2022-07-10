@@ -517,10 +517,15 @@ img {
 
 .address-list .map {
   color: var(--white-color);
-
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.address-list .address-color:hover,
+.address-list .address-color:focus {
+  color: var(--accent-color);
+}
+
 .address-list .info {
   color: var(--footer-address-color);
 
