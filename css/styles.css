@@ -949,9 +949,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
-.form-field .modal-button {
+.modal-button {
   display: block;
   margin: 0 auto;
 }
